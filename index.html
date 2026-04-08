@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complexe Mame Soda - Chez Yama Kayré</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Complexe Mame Soda</h1>
+            <h2 class="hero-subtitle">Chez Yama Kayré</h2>
+            <p class="hero-description">Salon de coiffure et soins de beauté</p>
+            <div class="hero-cta">
+                <p class="hero-tagline">✨ Transformez votre look, subliminez votre beauté ✨</p>
+                <p class="hero-subtagline">Profitez de -10% sur 3 services ou plus 🎯</p>
+            </div>
+            <div class="hero-hours">
+                <i class="far fa-clock"></i>
+                <span>9h - 20h (ouvert tous les jours)</span>
+            </div>
+            <a href="#services" class="hero-btn">Découvrir nos services</a>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Mame Soda</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="produits.html">Produits </a></li>
+                <li><a href="#reservation">Réservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="services-grid">
+                <!-- Cérémonie et Événements -->
+                <div class="service-category">
+                    <div class="service-image">
+                        <img src="images/ceremonie-evenements.png" alt="Cérémonie et Événements">
+                    </div>
+                    <h3 class="category-title">Cérémonie et Événements</h3>
+                    <div class="service-list">
+                        <div class="service-item" onclick="selectService('Cérémonie mariage matin et soir - 50.000 F')">
+                            <span class="service-name">Cérémonie mariage matin et soir</span>
+                            <span class="service-price">50.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Baptême matin unique - 30.000 F')">
+                            <span class="service-name">Baptême matin unique</span>
+                            <span class="service-price">30.000 F</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maquillage -->
+                <div class="service-category">
+                    <div class="service-image">
+                        <img src="images/maquillage.jpg" alt="Maquillage">
+                    </div>
+                    <h3 class="category-title">Maquillage</h3>
+                    <div class="service-list">
+                        <div class="service-item" onclick="selectService('Maquillage simple - 3.000 F')">
+                            <span class="service-name">Maquillage simple</span>
+                            <span class="service-price">3.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Maquillage simple avec cils - 5.000 F')">
+                            <span class="service-name">Maquillage simple avec cils</span>
+                            <span class="service-price">5.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Makeup complet - 10.000 F')">
+                            <span class="service-name">Makeup complet</span>
+                            <span class="service-price">10.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Pose cils direct - 1.000 F')">
+                            <span class="service-name">Pose cils direct</span>
+                            <span class="service-price">1.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Pose cils à cils - 5.000 F')">
+                            <span class="service-name">Pose cils à cils</span>
+                            <span class="service-price">5.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Extension cils à cils - 15.000 F')">
+                            <span class="service-name">Extension cils à cils</span>
+                            <span class="service-price">15.000 F</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tissage -->
+                <div class="service-category">
+                    <div class="service-image">
+                        <img src="images/tissage.jpg" alt="Tissage">
+                    </div>
+                    <h3 class="category-title">Tissage</h3>
+                    <div class="service-list">
+                        <div class="service-item" onclick="selectService('Tissage simple - 5.000 F')">
+                            <span class="service-name">Tissage simple</span>
+                            <span class="service-price">5.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Tissage avec closure frontal - 7.500 F')">
+                            <span class="service-name">Tissage avec closure frontal</span>
+                            <span class="service-price">7.500 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Tissage 360 - 10.000 F')">
+                            <span class="service-name">Tissage 360</span>
+                            <span class="service-price">10.000 F</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ongles -->
+                <div class="service-category">
+                    <div class="service-image">
+                        <img src="images/ongles.jpg" alt="Ongles">
+                    </div>
+                    <h3 class="category-title">Ongles</h3>
+                    <div class="service-list">
+                        <div class="service-item" onclick="selectService('Pédicure et manucure - 10.000 F')">
+                            <span class="service-name">Pédicure et manucure</span>
+                            <span class="service-price">10.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Pédicure - 7.500 F')">
+                            <span class="service-name">Pédicure</span>
+                            <span class="service-price">7.500 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Manucure - 5.000 F')">
+                            <span class="service-name">Manucure</span>
+                            <span class="service-price">5.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Pose ongles simple - 2.000 F')">
+                            <span class="service-name">Pose ongles simple</span>
+                            <span class="service-price">2.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Pose ongles avec décoration - 3.000 F')">
+                            <span class="service-name">Pose ongles avec décoration</span>
+                            <span class="service-price">3.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Permanente - 7.000 F')">
+                            <span class="service-name">Permanente</span>
+                            <span class="service-price">7.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Gel - 10.000 F')">
+                            <span class="service-name">Gel</span>
+                            <span class="service-price">10.000 F</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soins Capillaires -->
+                <div class="service-category">
+                    <div class="service-image">
+                        <img src="images/soins-capillaires.jpg" alt="Soins Capillaires">
+                    </div>
+                    <h3 class="category-title">Soins Capillaires</h3>
+                    <div class="service-list">
+                        <div class="service-item" onclick="selectService('Traitement cheveux (4 séances) - 30.000 F')">
+                            <span class="service-name">Traitement cheveux (4 séances)</span>
+                            <span class="service-price">30.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Traitement cheveux (3 mois) - 90.000 F')">
+                            <span class="service-name">Traitement cheveux (3 mois)</span>
+                            <span class="service-price">90.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Défrisage sans produit - 3.000 F')">
+                            <span class="service-name">Défrisage sans produit</span>
+                            <span class="service-price">3.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Défrisage avec produit - Sur demande')">
+                            <span class="service-name">Défrisage avec produit</span>
+                            <span class="service-price">Sur demande</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tresses et Coiffures -->
+                <div class="service-category">
+                    <div class="service-image">
+                        <img src="images/tresses.jpg" alt="Tresses et Coiffures">
+                    </div>
+                    <h3 class="category-title">Tresses et Coiffures</h3>
+                    <div class="service-list">
+                        <div class="service-item" onclick="selectService('Tresse sous le soleil - 7.500 F')">
+                            <span class="service-name">Tresse sous le soleil</span>
+                            <span class="service-price">7.500 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Tresse de base - 3.000 F')">
+                            <span class="service-name">Tresse de base</span>
+                            <span class="service-price">3.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Tresse simple - 3.000 F')">
+                            <span class="service-name">Tresse simple</span>
+                            <span class="service-price">3.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Tresse avec mèche - 5.000 F')">
+                            <span class="service-name">Tresse avec mèche</span>
+                            <span class="service-price">5.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Mèche carré - 7.500 F')">
+                            <span class="service-name">Mèche carré</span>
+                            <span class="service-price">7.500 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Locks - 25.000 F')">
+                            <span class="service-name">Locks</span>
+                            <span class="service-price">25.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Rajout - 5.000 F')">
+                            <span class="service-name">Rajout</span>
+                            <span class="service-price">5.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Twist avec mèche - 25.000 F')">
+                            <span class="service-name">Twist avec mèche</span>
+                            <span class="service-price">25.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Brushing - 5.000 F')">
+                            <span class="service-name">Brushing</span>
+                            <span class="service-price">5.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Torsade simple - 3.000 F')">
+                            <span class="service-name">Torsade simple</span>
+                            <span class="service-price">3.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Torsade avec chignon - 5.000 F')">
+                            <span class="service-name">Torsade avec chignon</span>
+                            <span class="service-price">5.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Brin - 10.000 F')">
+                            <span class="service-name">Brin</span>
+                            <span class="service-price">10.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Entretien perruque - 15.000 F')">
+                            <span class="service-name">Entretien perruque</span>
+                            <span class="service-price">15.000 F</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soins Visage -->
+                <div class="service-category">
+                    <div class="service-image">
+                        <img src="images/soins-visage.jpg" alt="Soins Visage">
+                    </div>
+                    <h3 class="category-title">Soins Visage</h3>
+                    <div class="service-list">
+                        <div class="service-item" onclick="selectService('Soin de visage simple - 5.000 F')">
+                            <span class="service-name">Soin de visage simple</span>
+                            <span class="service-price">5.000 F</span>
+                        </div>
+                        <div class="service-item" onclick="selectService('Soin de visage complet - 15.000 F')">
+                            <span class="service-name">Soin de visage complet</span>
+                            <span class="service-price">15.000 F</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Services Summary -->
+            <div class="services-summary">
+                <div class="selected-services">
+                    <h3>Services Sélectionnés</h3>
+                    <div id="selectedServicesList" class="selected-list">
+                        <p class="empty-selection">Aucun service sélectionné</p>
+                    </div>
+                    <div class="total-section">
+                        <div class="total-original">
+                            <span>Total:</span>
+                            <span id="totalOriginal">0 F</span>
+                        </div>
+                        <div id="discountSection" class="discount-section" style="display: none;">
+                            <span>Réduction (-10%):</span>
+                            <span id="discountAmount">0 F</span>
+                        </div>
+                        <div class="total-final">
+                            <span>Total à payer:</span>
+                            <span id="totalFinal">0 F</span>
+                        </div>
+                    </div>
+                    <button id="clearSelection" class="btn-clear" style="display: none;">Effacer la sélection</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2 class="section-title">Réservation</h2>
+            <div class="reservation-form">
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Services choisis</label>
+                        <textarea id="service" name="service" placeholder="Sélectionnez des services dans la liste ci-dessus" readonly required rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Heure</label>
+                        <select id="time" name="time" required>
+                            <option value="">Choisir une heure</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Confirmer le rendez-vous sur WhatsApp</button>
+                </form>
+                
+                <!-- Récapitulatif -->
+                <div id="recapitulatif" class="recapitulatif" style="display: none;">
+                    <h3>Récapitulatif de votre rendez-vous</h3>
+                    <div class="recap-content">
+                        <div class="recap-item">
+                            <span class="recap-label">Nom:</span>
+                            <span id="recap-name" class="recap-value"></span>
+                        </div>
+                        <div class="recap-item">
+                            <span class="recap-label">Téléphone:</span>
+                            <span id="recap-phone" class="recap-value"></span>
+                        </div>
+                        <div class="recap-item">
+                            <span class="recap-label">Service:</span>
+                            <span id="recap-service" class="recap-value"></span>
+                        </div>
+                        <div class="recap-item">
+                            <span class="recap-label">Date:</span>
+                            <span id="recap-date" class="recap-value"></span>
+                        </div>
+                        <div class="recap-item">
+                            <span class="recap-label">Heure:</span>
+                            <span id="recap-time" class="recap-value"></span>
+                        </div>
+                    </div>
+                    <div class="recap-actions">
+                        <button id="modify-btn" class="btn-modify">Modifier</button>
+                        <button id="confirm-whatsapp-btn" class="btn-submit">Envoyer sur WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Adresse</h3>
+                    <p>Disponible à Dakar</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horaires</h3>
+                    <p>9h - 20h<br>Ouvert tous les jours</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>+221 77 534 36 09</p>
+                </div>
+            </div>
+            <div class="whatsapp-section">
+                <a href="https://wa.me/221775343609" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Contacter sur WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Complexe Mame Soda - Chez Yama Kayré</h3>
+                <p>Salon de coiffure et soins de beauté</p>
+                <div class="footer-info">
+                    <p><i class="far fa-clock"></i> 9h - 20h (ouvert tous les jours)</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Disponible à DAKAR RUFISQUE</p>
+                    <p><i class="fab fa-whatsapp"></i> +221 77 534 36 09</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Complexe Mame Soda - Chez Yama Kayré. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

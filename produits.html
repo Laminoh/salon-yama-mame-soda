@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits & Games - Complexe Mame Soda</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Complexe Mame Soda</h1>
+            <h2 class="hero-subtitle">Chez Yama Kayré</h2>
+            <p class="hero-description">Produits & Games de beauté</p>
+            <div class="hero-cta">
+                <p class="hero-tagline">✨ Découvrez nos produits exclusifs ✨</p>
+                <p class="hero-subtagline">Profitez de nos offres spéciales 🎯</p>
+            </div>
+            <div class="hero-hours">
+                <i class="far fa-clock"></i>
+                <span>9h - 20h 7/7</span>
+            </div>
+            <a href="#products" class="hero-btn">Découvrir nos produits</a>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Mame Soda</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="produits.html" class="active">Produits & Games</a></li>
+                <li><a href="index.html#reservation">Réservation</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section id="products" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Produits</h2>
+            <div class="services-grid">
+                <!-- Gel -->
+                <div class="service-category">
+                    <div class="service-image">
+                        <img src="images/gel.png" alt="Gel">
+                    </div>
+                    <h3 class="category-title">Gel</h3>
+                    <div class="service-list">
+                        <div class="service-item" onclick="selectService('Gel - 5000 F')">
+                            <span class="service-name">Gel</span>
+                            <span class="service-price">5000 F</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gommage Corporel -->
+                <div class="service-category">
+                    <div class="service-image">
+                        <img src="images/gommage-corporel.png" alt="Gommage Corporel">
+                    </div>
+                    <h3 class="category-title">Gommage Corporel</h3>
+                    <div class="service-list">
+                        <div class="service-item" onclick="selectService('Gommage corporel - 5000 F')">
+                            <span class="service-name">Gommage corporel</span>
+                            <span class="service-price">5000 F</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Huile -->
+                <div class="service-category">
+                    <div class="service-image">
+                        <img src="images/huiles.png" alt="Huile">
+                    </div>
+                    <h3 class="category-title">Huile</h3>
+                    <div class="service-list">
+                        <div class="service-item" onclick="selectService('Huile - 5500 F')">
+                            <span class="service-name">Huile</span>
+                            <span class="service-price">5500 F</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lait de Corps -->
+                <div class="service-category">
+                    <div class="service-image">
+                        <img src="images/LAITDECORPS.png" alt="Lait de Corps">
+                    </div>
+                    <h3 class="category-title">Lait de Corps</h3>
+                    <div class="service-list">
+                        <div class="service-item" onclick="selectService('Lait de corps - 5000 F')">
+                            <span class="service-name">Lait de corps</span>
+                            <span class="service-price">5000 F</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gamme Capillaire -->
+                <div class="service-category">
+                    <div class="service-image">
+                        <img src="images/gamme-capillaires.png" alt="Gamme Capillaire">
+                    </div>
+                    <h3 class="category-title">Gamme Capillaire</h3>
+                    <div class="service-list">
+                        <div class="service-item" onclick="selectService('Gamme Capillaire complète - 13000 F')">
+                            <span class="service-name">Gamme Capillaire complète</span>
+                            <span class="service-price">13000 F</span>
+                        </div>
+                        <div class="gamme-details">
+                            <p><i class="fas fa-check"></i> Huile capillaire</p>
+                            <p><i class="fas fa-check"></i> Crème capillaire</p>
+                            <p><i class="fas fa-check"></i> Lotion capillaire</p>
+                            <p><i class="fas fa-check"></i> Shampoing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Products Summary -->
+            <div class="services-summary">
+                <div class="selected-services">
+                    <h3>Produits Sélectionnés</h3>
+                    <div id="selectedServicesList" class="selected-list">
+                        <p class="empty-selection">Aucun produit sélectionné</p>
+                    </div>
+                    <div class="total-section">
+                        <div class="total-final">
+                            <span>Total à payer:</span>
+                            <span id="totalFinal">0 F</span>
+                        </div>
+                    </div>
+                    <button id="clearSelection" class="btn-clear" style="display: none;">Effacer la sélection</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="reservation">
+        <div class="container">
+            <h2 class="section-title">Commande</h2>
+            <div class="reservation-form">
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Adresse de livraison</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Confirmer la commande sur WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Complexe Mame Soda - Chez Yama Kayré</h3>
+                <p>Salon de coiffure et soins de beauté</p>
+                <div class="footer-info">
+                    <p><i class="far fa-clock"></i> 9h - 20h (ouvert tous les jours)</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Disponible à DAKAR RUFISQUE</p>
+                    <p><i class="fab fa-whatsapp"></i> +221 77 534 36 09</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Complexe Mame Soda - Chez Yama Kayré. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
